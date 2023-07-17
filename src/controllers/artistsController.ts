@@ -1,10 +1,17 @@
-import {Request, Response} from 'express'
+import { Request, Response } from "express";
 
-export class ArtistsController{
+export class ArtistsController {
+  /**
+   * Retorna os artistas
+   */
   public artists = (req: Request, res: Response) => {
-    res.json({message: "Layne Staley"})
-  }
+    res.json({ message: "Layne Staley" });
+  };
+
+  /**
+   * Retorna as musicas
+   */
   public musics = (req: Request, res: Response) => {
-    res.json({message: "god am"})
-  }
+    res.json({ message: "god am" });
+  };
 }
